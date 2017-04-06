@@ -15,7 +15,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<section class="mdcl-footer">
 	<div class="one-third text-center featured-heading"><h2 class="h2-footer">Contact</h3></div>
-	<div class="one-third text-center featured-heading"><h2 class="h2-footer">Our Team</h3></div>
+	<div class="one-third text-center featured-heading"><h2 class="h2-footer"><a href="http://0058d.com/our-team/">Our Team</a></h3></div>
 	<div class="one-third text-center featured-heading"><h2 class="h2-footer">Business Scope</h3></div>
 
 </section>

@@ -158,7 +158,7 @@ function mdcltheme_scripts() {
 
 	wp_enqueue_style( 'mdcl-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300,200', array(), false );
 
-
+	 wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -168,7 +168,6 @@ add_action( 'wp_enqueue_scripts', 'mdcltheme_scripts' );
 
 function conditional_add_scripts() {
     if (is_page('business')) {
- 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
  	wp_enqueue_style( 'mdcltheme-style1', get_template_directory_uri() . '/assets/elementsqwlr.css', array(), true );
 	wp_enqueue_style( 'mdcltheme-style2', get_template_directory_uri() . '/assets/userqwlr.css' );
 
