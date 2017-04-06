@@ -1,0 +1,65 @@
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.one-third {
+	width: 30%;
+}
+
+.one-quarter {
+	width: 25%;	
+}
+
+.text-center{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.mdcl-footer {
+	@include make-flex-row;
+	 margin: 80px;
+}
+
+.site-footer {
+	background: rgba(248, 247, 216, 0.7);
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $font__heading;
+    font-weight: 300;
+    font-size: 40px;
+    min-height: 40px;
+    line-height: 1;
+    padding: 10px 0;
+}
+.btn {
+	    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-radius: 1px;
+    border: 1px solid #666;
+    box-shadow: none;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+input {
+    border: 0;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    box-shadow: none;
+}
