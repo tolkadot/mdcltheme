@@ -22,7 +22,8 @@
 
 .mdcl-footer {
 	@include make-flex-row;
-	 margin: 80px;
+	 margin: 40px auto;
+	 width: 50%;
 }
 
 .site-footer {
@@ -62,4 +63,12 @@ input {
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
     box-shadow: none;
+}
+
+.h2-footer {
+    font-size: 1em;
+}
+
+.weight-300{
+    font-weight: 300;
 }

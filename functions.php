@@ -144,8 +144,9 @@ function mdcltheme_scripts() {
 
 	wp_enqueue_style( 'mdcltheme-style', get_stylesheet_uri() );
 	
+
+	wp_enqueue_style( 'mdcltheme-swiper-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css');
 	wp_enqueue_style( 'mdcltheme-swiper', get_template_directory_uri() . '/assets/swiper.css' );
-	wp_enqueue_style( 'mdcltheme-swiper2', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css');
 	
 	wp_enqueue_script( 'swiper-script', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js', array( 'jquery' ), true );
 	
@@ -230,7 +231,7 @@ $copyright = "&copy; " . $copyright_dates[0]->firstdate;
 if($copyright_dates[0]->firstdate != $copyright_dates[0]->lastdate) {
 $copyright .= '-' . $copyright_dates[0]->lastdate;
 }
-$output = $copyright;
+$output = $copyright . " MDCL, Inc";
 }
 return $output;
 }

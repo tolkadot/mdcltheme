@@ -14,33 +14,22 @@
 	</div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<section class="mdcl-footer">
-	<div class="one-third text-center featured-heading"><h3>Contact</h3></div>
-	<div class="one-third text-center featured-heading"><h3>Our Team</h3></div>
-	<div class="one-third text-center featured-heading"><h3>Business Scope</h3></div>
+	<div class="one-third text-center featured-heading"><h2 class="h2-footer">Contact</h3></div>
+	<div class="one-third text-center featured-heading"><h2 class="h2-footer">Our Team</h3></div>
+	<div class="one-third text-center featured-heading"><h2 class="h2-footer">Business Scope</h3></div>
 
 </section>
-<div class="text-center"><?php echo(mdcl_copyright()) ?></div>
+<div class="text-center weight-300"><?php echo(mdcl_copyright()) ?></div>
 	</footer>
 </div>
 <?php wp_footer(); ?>
 
- <script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    
-    // If we need pagination
-    pagination: '.swiper-pagination',
-    
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    
-    // And if we need scrollbar
-    scrollbar: '.swiper-scrollbar',
-  })        
-  </script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
 
 
 </body>
