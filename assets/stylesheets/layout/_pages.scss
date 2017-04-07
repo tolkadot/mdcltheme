@@ -26,6 +26,11 @@
 	 width: 50%;
 }
 
+.copyright{
+    font-size: .7em;
+    margin: 10px;
+}
+
 .site-footer {
 	background: rgba(248, 247, 216, 0.7);
 }
@@ -73,3 +78,16 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
     font-weight: 300;
 }
 
+.col-sm-8 {
+    width: 75%;
+}
+.col-sm-4{
+    width: 25%;
+}
+.col.xs-12 {
+    width: 100%;
+}
+.row {
+    @include make-flex-row;
+    align-items: flex-start;
+}

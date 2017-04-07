@@ -679,6 +679,10 @@ body {
   margin: 40px auto;
   width: 50%; }
 
+.copyright {
+  font-size: .7em;
+  margin: 10px; }
+
 .site-footer {
   background: rgba(248, 247, 216, 0.7); }
 
@@ -720,6 +724,22 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 .weight-300 {
   font-weight: 300; }
+
+.col-sm-8 {
+  width: 75%; }
+
+.col-sm-4 {
+  width: 25%; }
+
+.col.xs-12 {
+  width: 100%; }
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start; }
 
 /*--------------------------------------------------------------
 ## FRONT Page
@@ -898,6 +918,20 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 .mdcl-hero {
   padding: 5% 0; }
+
+/*--------------------------------------------------------------
+## Team Page
+--------------------------------------------------------------*/
+.person-text-item {
+  padding: 0px;
+  width: 80%;
+  margin: auto; }
+  .person-text-item h4 {
+    margin-top: 20px; }
+
+.aboutUsEmployeeImage {
+  width: 80%;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Comments
