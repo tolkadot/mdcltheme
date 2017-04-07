@@ -574,11 +574,12 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  text-decoration: none;
+  color: #404040; }
   a:visited {
-    color: purple; }
+    color: #404040; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #f9a266; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
