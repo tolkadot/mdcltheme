@@ -18,6 +18,7 @@
 
 <section class="mdcl-hero">
 <div class="hero-image"> 
+
 <div class="logo-box">	<?php mdcltheme_the_custom_logo(); ?></div>
 <div class="hero-text"> <h1>Securing Medical Data On The Move</h1>	</div>
 
@@ -28,6 +29,9 @@
 	<label class="one-third left-align white-signup"><input type="text" name="last_name" id="last_name" tabindex="2" placeholder="Last Name" class="" autocorrect="off" autocomplete="off" spellcheck="false" data-sel-last-name="true"></label>
 	<label class="one-third left-align white-signup sign-up-btn"><input type="submit" name="commit" value="Sign Up" tabindex="3" class="sign-up btn" data-sel-find-profile-button="true" data-disable-with="Sign Up"></label>
 </div>
+
+
+
 
 </div>
 </section>

@@ -11,3 +11,39 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.swiper-container {
+        width: 100%;
+        height: 700px;
+        @include breakpoint($smallScreen){
+        height: 500px; }
+    }
+    
+.swiper-row {
+    @include make-flex-column;
+    @include breakpoint($smallScreen){
+    @include make-flex-row;
+    align-items: flex-start;}
+}
+
+
+.hide-small{
+    display: none;
+     @include breakpoint($smallScreen){
+    display: block;}
+}
+
+.show-small{
+     display: block;
+     padding: 0 0 20px 0;
+      @include breakpoint($smallScreen){
+    display: none;}
+}
+
+.person-text-item {
+    font-size: 14px;
+      @include breakpoint($smallScreen){
+          font-size: 18px;
+      }
+    
+}

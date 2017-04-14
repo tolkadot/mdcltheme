@@ -21,9 +21,18 @@
 }
 
 .mdcl-footer {
+    @include make-flex-column;
+    .one-third{
+        width: 80%;
+        h2{
+            margin: 5px;
+        }
+    }
+    @include breakpoint($smallScreen){
 	@include make-flex-row;
 	 margin: 40px auto;
 	 width: 50%;
+    }
 }
 
 .copyright{
@@ -91,3 +100,20 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
     @include make-flex-row;
     align-items: flex-start;
 }
+.blank {
+    font-size: 12px;
+}
+
+.tolka-logo{
+    width: 100px;
+     @include breakpoint($smallScreen) {
+         width: 200px;
+     }
+}
+
+.mdcl-header{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80%;
+margin: 10px auto 20px auto;}

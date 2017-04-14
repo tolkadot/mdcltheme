@@ -1,9 +1,4 @@
-.tolka-logo{
-display:block; height: 100px; width: 100px; margin:auto;
-}
-.tolka-logo-link{
-display:block;
-}
+
 
 .mdcl-hero{
     height: 60VH;
@@ -52,6 +47,32 @@ display:block;
 
 .hero-text {
 align-self: center;
+    h1 {
+        font-size: 24px;
+        display: block;
+        width: 70%;
+        margin: .67em auto;
+        @include breakpoint($smallScreen) 
+        {
+        font-size: 40px;
+         width: 100%;
+        }
+    }
+    
+}
+
+.logo-box{
+    .tolka-logo{
+        display:block; height: 100px; width: 100px; margin:auto;
+        @include breakpoint($smallScreen)
+            {
+               height: 200px; width: 200px; 
+            }
+            }
+    }
+    
+.tolka-logo-link{
+display:block;
 }
 
 .site-main{
@@ -60,12 +81,6 @@ margin: 0px}
 .site-branding{
 display:none;}
 
-.mdcl-header{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 80%;
-margin: 10px auto;}
 
 .mdcl-featured-text{
  @include make-flex-row;
@@ -73,28 +88,26 @@ margin: 10px auto;}
     
 }
 
-.mdcl-blurb {
-    margin: 100px;
-    text-align: center;
-    
-}
-
-.blurb-container {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    h2{
-        font-size: 1.5em;
-    }
-}
 
 .icon {
     font-size: 40px;
 }
 .feature-container{
     width: 80%;
+    @include make-flex-column;
+    .one-quarter {
+        width: 100%;
+    }
+    @include breakpoint($smallScreen){
     margin: auto;
+    width: 100%;
     @include make-flex-row;
+    .one-quarter {
+        width: 25%;
+    }
+    }
+    @include breakpoint($largeScreen){
+     width: 80%; }
 }
 .featured-heading {
     h3{
@@ -111,11 +124,20 @@ margin: 10px auto;}
 }
 
 .login-area{
+    width: 80%;
+    @include make-flex-column;
+    justify-content: flex-start;
+    .one-third{
+        display:block;
+        width: 100%;
+        }
+    @include breakpoint($smallScreen)
+    {
     width: 50%;
     @include make-flex-row;
     .one-third{
         display:block;
-        
+    }
     }
 }
 .sign-up{
@@ -151,5 +173,31 @@ margin: 10px auto;}
          color: white;
     }
 }
+.txt {
+    text-align: center;
+}
 
 
+.mdcl-blurb {
+    margin: 100px auto;
+    @include breakpoint($smallScreen) {
+    margin: 100px;
+    }
+    text-align: center;
+    @include breakpoint($smallScreen) {}
+}
+
+.blurb-container {
+    width: 80%;
+    @include breakpoint($smallScreen) {
+    width: 60%;
+    }
+    margin: auto;
+    text-align: center;
+    h2{
+        font-size: 1.3em;
+        @include breakpoint($smallScreen) {
+        font-size: 1.5em;
+        }
+    }
+}
