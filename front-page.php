@@ -9,10 +9,9 @@
 
 <?php get_header('front'); ?>
 
-
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
 
 
 
@@ -27,7 +26,19 @@
 		<input type="text" name="first_name" id="first_name" tabindex="1" placeholder="First Name" class="login-input" autocorrect="off" autocomplete="off" spellcheck="false" data-sel-first-name="true">
 	</label>
 	<label class="one-third left-align white-signup"><input type="text" name="last_name" id="last_name" tabindex="2" placeholder="Last Name" class="" autocorrect="off" autocomplete="off" spellcheck="false" data-sel-last-name="true"></label>
-	<label class="one-third left-align white-signup sign-up-btn"><input type="submit" name="commit" value="Sign Up" tabindex="3" class="sign-up btn" data-sel-find-profile-button="true" data-disable-with="Sign Up"></label>
+	
+	<label id="myBtn" class="one-third left-align white-signup sign-up-btn">
+	<input  type="submit" name="commit" value="Sign Up" tabindex="3" class="sign-up btn" data-sel-find-profile-button="true" data-disable-with="Sign Up">
+	</label>
+	
+	<div id="myModal" class="modal">
+ 	 <!-- Modal content -->
+  	<div class="modal-content">
+    <span id="close-me" class="close close-me">&times;</span>
+    <p>Sign up to our network will be opening soon</p>
+  	</div>
+
+	
 </div>
 
 
@@ -68,10 +79,33 @@
 </section>
 
 
+<script>
+
+// When the user clicks the button, open the modal 
+document.getElementById("myBtn").onclick = function() {
+    document.getElementById('myModal').style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+document.getElementById("close-me").onclick = function() {
+    document.getElementById('myModal').style.display = "none";
+    console.log("here");
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 
 
 		</main>
 	</div>
 <?php get_footer(); ?>
+
+
+
 
